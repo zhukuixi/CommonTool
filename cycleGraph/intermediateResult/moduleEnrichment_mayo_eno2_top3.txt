@@ -1,0 +1,61 @@
+individual	group	value	id
+1	Extracellular matrix organization	black	5.98154201255634e-13	1
+2	Collagen chain trimerization	black	1.81517148151611e-09	2
+3	Collagen biosynthesis and modifying enzymes	black	6.57779483512945e-09	3
+11	Attenuation phase	blue	1.67083824311554e-11	1
+21	HSF1-dependent transactivation	blue	2.2256639814695e-09	2
+31	HSF1 activation	blue	1.76719517349751e-08	3
+12	Cytoplasmic Ribosomal Proteins	brown	3.94514937152931e-52	1
+22	Eukaryotic Translation Elongation	brown	2.84898411318663e-49	2
+32	Peptide chain elongation	brown	2.05859294345817e-48	3
+13	Immune System	coral	1.45781269114987e-11	1
+23	Neutrophil degranulation	coral	3.83424267478065e-11	2
+33	Microglia Pathogen Phagocytosis Pathway	coral	1.26523526188443e-10	3
+14	Spinal Cord Injury	cyan	1.72114368620303e-10	1
+24	Interleukin-4 and Interleukin-13 signaling	cyan	1.74673791000965e-08	2
+34	Small cell lung cancer	cyan	2.7322913326109e-07	3
+15	Transport of small molecules	green	8.63536632184089e-08	1
+25	Glutamate Glutamine metabolism	green	3.46106825397245e-07	2
+35	SLC-mediated transmembrane transport	green	1.78859366734351e-06	3
+16	Chromatin modifying enzymes	greenyellow	4.56436381567273e-05	1
+26	Chromatin organization	greenyellow	4.56436381567273e-05	2
+36	Biosynthesis of DHA-derived SPMs	greenyellow	0.000780857394405388	3
+17	COPII-mediated vesicle transport	grey60	7.63772763649387e-05	1
+27	Membrane Trafficking	grey60	0.000516692499968545	2
+37	ER to Golgi Anterograde Transport	grey60	0.000593126272761334	3
+18	Prolactin	lightcyan	0.00616391213044986	1
+28	Invadopodia formation	lightcyan	0.00675595453463729	2
+38	proline biosynthesis	lightcyan	0.00675595453463729	3
+19	RNA degradation	lightgreen	0.000306476194079847	1
+29	BARD1 signaling events	lightgreen	0.00108065396808487	2
+39	Metabolism of RNA	lightgreen	0.00251033069795065	3
+110	Generic Transcription Pathway	lightyellow	5.16418915141458e-06	1
+210	RNA Polymerase II Transcription	lightyellow	1.29007462747558e-05	2
+310	Gene expression (Transcription)	lightyellow	3.03625937265344e-05	3
+111	Antigen processing: Ubiquitination & Proteasome degradation	magenta	0.00301449444363531	1
+211	Intra-Golgi and retrograde Golgi-to-ER traffic	magenta	0.00521262550978454	2
+311	Membrane Trafficking	magenta	0.00589046269980152	3
+112	Thyroid hormone signaling pathway	midnightblue	0.00192992532255731	1
+212	Dual Incision in GG-NER	midnightblue	0.00348592849399739	2
+312	Formation of Incision Complex in GG-NER	midnightblue	0.00382858109377648	3
+113	Intraflagellar transport	pink	0.000220703330974908	1
+213	tRNA splicing	pink	0.000521398867145056	2
+313	dolichyl-diphosphooligosaccharide biosynthesis	pink	0.00229099136143382	3
+114	Glial Cell Differentiation	purple	0.000449946991637849	1
+214	Triglyceride metabolism	purple	0.000488671016986745	2
+314	Signaling by FGFR1	purple	0.00109686485933849	3
+115	Other semaphorin interactions	red	0.00170694095712413	1
+215	Transport of small molecules	red	0.00206851817553179	2
+315	Primary Focal Segmental Glomerulosclerosis FSGS	red	0.00238987381292188	3
+116	Alpha Linolenic Acid and Linoleic Acid Metabolism	salmon	4.47627463011701e-05	1
+216	Ibuprofen Action Pathway	salmon	8.99340637393267e-05	2
+316	Hydrolysis of LPC	salmon	0.000163248060474423	3
+117	Chondroitin sulfate/dermatan sulfate metabolism	tan	6.59382466268225e-05	1
+217	Chondroitin sulfate biosynthesis	tan	8.65319819808265e-05	2
+317	Glycosaminoglycan metabolism	tan	0.000169498724546144	3
+118	Neuronal System	turquoise	3.88835259359418e-39	1
+218	Transmission across Chemical Synapses	turquoise	3.34431437213307e-25	2
+318	Axon guidance	turquoise	6.05366066342722e-19	3
+119	rRNA modification in the nucleus and cytosol	yellow	0.000450317493068469	1
+219	rRNA processing in the nucleus and cytosol	yellow	0.000450317493068469	2
+319	rRNA processing	yellow	0.0010047562162453	3
