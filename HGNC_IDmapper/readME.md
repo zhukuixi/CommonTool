@@ -1,0 +1,1 @@
+![Page0](https://github.com/zhukuixi/CommonTool/blob/master/HGNC_IDmapper/img/HGNC.png)  
