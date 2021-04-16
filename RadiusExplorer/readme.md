@@ -2,7 +2,13 @@
 # Radius Explorer
 
 ## Main idea
-Given a network and a list of target, we want to retrieve nodes related to our targets from the network and arrange the nodes in an order which shows the distance between each node to the original node. Finally, it will create a folder for each network. Within each network folder, it contains a result file based on the combination of targetFile and modeFile. The file name's format is A_B.txt, where A is the a name of target node and B is the name of mode.
+Given a list of networks and a list of targets, we want to retrieve nodes related to our targets from each of the network and arrange the nodes from the closest to the furthest. Finally, it will create a folder for each network. Within each network folder, it creates a result file based on the combination of target and mode from targetFile and modeFile. The file name's format is A_B.txt, where A is the a name of target node and B is the name of mode.
+
+## About mode
+The mode could be up, down and radius. We assume the networks are directed network.    
+**up** means starts from the target node and goes upward.  
+**down** means starts from the target node and goes downward.   
+**radius** means starts from the target node and goes upward and downward.  
    
 ## Parameter listed in order
 		String netFolder= args[0];      #The first one is a directory to the network.  (This folder contains all the network you want to check) 
