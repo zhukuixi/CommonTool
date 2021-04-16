@@ -1,0 +1,5 @@
+0	DX
+1	Taurine
+2	Asp
+2	Orn
+3	Glu

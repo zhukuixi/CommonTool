@@ -1,0 +1,595 @@
+C18:1	C2
+C10:2	C9
+lysoPC a C18:1	lysoPC a C18:2
+SM C20:2	PC aa C32:3
+PC aa C30:0	PC aa C34:4
+SM C18:1	SM C20:2
+PC ae C42:3	PC ae C44:3
+PC ae C38:3	PC ae C40:3
+SM (OH) C16:1	PC ae C40:2
+PC aa C38:4	PC aa C34:4
+PC ae C32:1	PC aa C32:0
+C16	C18
+Ala	Pro
+PC ae C42:2	PC ae C40:1
+C3	C4
+C14:1	C14:1-OH
+SM C26:1	PC ae C40:2
+Val	Ile
+PC aa C38:4	lysoPC a C20:4
+PC aa C36:6	PC aa C36:5
+PC ae C32:2	PC ae C30:2
+PC aa C40:2	PC aa C42:2
+PC ae C42:3	PC ae C42:2
+PC aa C38:6	PC aa C40:6
+Lys	Orn
+Asn	Thr
+PC ae C40:5	PC ae C38:5
+Lys	His
+PC ae C34:0	PC ae C30:0
+PC aa C38:3	PC aa C36:1
+lysoPC a C17:0	C10:2
+PC ae C36:1	PC ae C34:0
+SM C18:1	SM C18:0
+Val	alpha-AAA
+C14:1-OH	C7-DC
+PC ae C44:5	PC ae C42:4
+PC aa C40:3	PC ae C42:1
+PC ae C38:6	PC aa C36:0
+PC ae C34:1	PC aa C36:1
+PC ae C44:5	PC ae C44:4
+PC aa C42:5	PC ae C42:2
+Tyr	Trp
+PC aa C42:0	PC ae C42:3
+PC ae C34:2	PC ae C36:2
+PC ae C30:0	PC aa C30:0
+C18:1	C16
+C10	C8
+PC ae C44:5	PC ae C44:6
+SM (OH) C14:1	PC aa C28:1
+C14:2	C14:1
+lysoPC a C16:1	lysoPC a C20:3
+lysoPC a C16:0	lysoPC a C18:0
+SM C16:1	SM C18:1
+C12	C14:2
+PC ae C38:0	PC aa C38:6
+SM C26:1	SM C26:0
+SM (OH) C22:1	SM (OH) C22:2
+lysoPC a C18:1	lysoPC a C20:4
+PC ae C42:5	PC ae C40:5
+PC aa C42:0	PC aa C42:1
+Creatinine	Kynurenine
+Ala	Tyr
+SM C26:1	SM C24:1
+PC ae C36:4	PC ae C38:5
+PC aa C38:3	PC ae C38:3
+lysoPC a C16:0	lysoPC a C17:0
+C10:2	C6 (C4:1-DC)
+PC ae C44:5	PC ae C42:5
+PC ae C38:0	PC aa C36:6
+C5-DC (C6-OH)	C16:1
+PC aa C30:0	PC aa C32:0
+PC ae C32:2	PC ae C32:1
+SM C26:0	SM (OH) C24:1
+PC aa C32:1	lysoPC a C16:1
+Glu	Asp
+PC ae C34:1	PC ae C38:3
+PC aa C28:1	PC ae C30:0
+PC ae C36:1	PC ae C34:1
+lysoPC a C16:1	lysoPC a C18:1
+SM (OH) C16:1	SM (OH) C14:1
+PC aa C32:1	PC aa C30:0
+SM C16:0	SM C16:1
+C16:1	C6 (C4:1-DC)
+SM (OH) C22:1	SM C24:0
+PC aa C42:5	PC aa C42:6
+Creatinine	SDMA
+PC ae C38:4	PC aa C38:4
+PC aa C40:5	PC aa C38:5
+C10	C12
+PC ae C36:5	PC ae C38:6
+SM (OH) C22:1	SM (OH) C24:1
+PC ae C34:2	PC ae C36:3
+PC ae C40:4	PC ae C38:4
+PC aa C40:4	PC aa C38:4
+PC aa C40:2	PC aa C40:3
+C18:1	C18:2
+C18:1	C16:1
+C3	C0
+SM C24:1	SM C16:0
+Creatinine	Cit
+PC ae C34:2	PC ae C32:2
+PC ae C36:3	PC ae C34:2
+PC aa C40:3	PC aa C40:2
+PC ae C38:6	PC ae C36:5
+PC ae C44:4	PC ae C44:3
+PC ae C36:5	T4-OH-Pro
+C6 (C4:1-DC)	DX
+PC aa C38:0	PC ae C40:6
+Ala	Asn
+Lys	Val
+PC aa C42:6	PC aa C42:5
+PC ae C38:6	PC aa C38:0
+PC aa C42:0	PC ae C44:6
+Val	Lys
+lysoPC a C18:0	C5-DC (C6-OH)
+C12	C10
+C18:2	C14:2
+PC ae C34:1	PC ae C36:1
+PC aa C30:0	PC aa C32:1
+PC ae C38:4	PC ae C40:4
+PC ae C42:4	PC ae C40:4
+PC ae C44:6	PC aa C42:0
+PC aa C42:5	PC aa C40:3
+C14:2	C18:2
+SM (OH) C14:1	SM (OH) C16:1
+C0	C3
+lysoPC a C18:1	lysoPC a C16:1
+PC aa C38:5	PC aa C40:5
+PC aa C42:0	PC ae C40:3
+PC aa C36:6	PC ae C38:0
+PC ae C36:4	PC ae C38:4
+SM (OH) C24:1	SM (OH) C22:1
+PC ae C38:5	PC ae C36:4
+C18:2	C18:1
+PC aa C40:4	PC aa C38:3
+PC ae C40:4	PC ae C42:4
+PC aa C40:4	PC aa C40:5
+PC aa C38:4	PC aa C40:4
+SM (OH) C16:1	lysoPC a C17:0
+SDMA	Creatinine
+PC ae C42:5	PC ae C44:5
+PC aa C42:1	PC aa C42:0
+SM (OH) C24:1	SM C26:0
+SM C24:1	SM C26:1
+PC ae C32:1	PC ae C32:2
+PC ae C38:4	PC ae C36:4
+PC aa C32:0	PC ae C36:0
+PC ae C36:4	PC ae C36:5
+SM (OH) C14:1	PC ae C34:2
+PC ae C40:5	PC ae C42:5
+SM C26:0	SM C26:1
+lysoPC a C17:0	C5-DC (C6-OH)
+SM (OH) C22:2	SM (OH) C22:1
+Asp	Glu
+C14:2	C12
+PC ae C40:6	PC aa C38:0
+PC aa C38:6	PC ae C38:0
+SM C16:0	SM C24:1
+lysoPC a C18:0	lysoPC a C16:0
+PC ae C34:2	PC ae C34:3
+PC aa C40:5	PC aa C40:4
+lysoPC a C16:1	Ala
+C16:1	C18:1
+SM C18:1	SM C16:1
+PC ae C36:1	SM (OH) C16:1
+PC aa C38:4	PC aa C38:5
+PC ae C44:6	PC ae C44:5
+PC ae C36:1	PC ae C36:0
+PC aa C40:5	PC aa C42:6
+alpha-AAA	Sarcosine
+lysoPC a C20:4	lysoPC a C18:1
+lysoPC a C20:3	lysoPC a C16:1
+PC ae C42:2	PC aa C40:3
+PC ae C36:5	PC ae C34:3
+C8	C10
+PC aa C28:1	SM (OH) C14:1
+C2	C0
+PC aa C42:0	PC ae C40:6
+PC aa C42:2	PC ae C36:0
+PC ae C44:4	PC ae C44:5
+PC ae C40:5	PC ae C40:4
+lysoPC a C20:3	lysoPC a C16:0
+PC ae C42:5	PC ae C40:4
+C5-DC (C6-OH)	lysoPC a C18:0
+Trp	Tyr
+PC ae C32:2	PC ae C34:2
+SM (OH) C22:1	SM C26:0
+PC aa C38:3	lysoPC a C20:3
+SM C16:1	SM C16:0
+PC ae C36:3	PC ae C34:3
+PC ae C36:5	PC ae C36:4
+PC aa C40:5	PC aa C38:3
+PC ae C30:0	SM C18:0
+C5-DC (C6-OH)	C8
+SM (OH) C16:1	PC ae C36:1
+PC ae C40:6	PC ae C38:6
+PC ae C42:3	PC aa C40:2
+PC aa C40:5	PC aa C42:5
+SM C18:0	SM C18:1
+PC aa C38:3	PC aa C40:5
+PC ae C34:0	lysoPC a C17:0
+PC ae C34:0	PC ae C36:1
+PC aa C38:0	PC ae C38:6
+SM C16:1	SM C24:1
+lysoPC a C17:0	lysoPC a C16:0
+C10:2	C16:1
+C7-DC	C14:1-OH
+PC aa C40:6	PC aa C38:6
+Asn	Gly
+SM C16:0	SM (OH) C22:2
+PC aa C38:4	PC ae C38:4
+PC aa C36:1	PC aa C38:3
+PC ae C38:0	PC ae C38:6
+PC aa C38:3	PC aa C40:4
+Tyr	Ala
+Thr	Asn
+PC aa C42:2	PC aa C40:2
+SM C24:0	SM (OH) C22:1
+C10:2	lysoPC a C18:0
+Kynurenine	Creatinine
+PC aa C40:6	PC aa C40:5
+PC ae C34:3	PC ae C36:5
+C14:1	C14:2
+C9	C5-DC (C6-OH)
+PC ae C38:3	PC ae C36:2
+PC ae C42:2	PC ae C42:3
+PC aa C36:5	PC aa C36:6
+PC ae C30:0	PC ae C34:0
+SM C24:0	SM C16:1
+PC ae C34:3	PC ae C36:3
+PC ae C38:0	PC aa C42:0
+C16	C18:1
+PC aa C42:1	PC aa C38:0
+PC aa C40:2	Glu
+Orn	Lys
+C16:1	C16
+Orn	Asp
+lysoPC a C20:3	lysoPC a C18:0
+PC aa C32:0	lysoPC a C16:0
+C5-DC (C6-OH)	C10
+Ile	Val
+PC aa C40:3	PC aa C42:5
+SM C18:0	SM (OH) C16:1
+PC ae C40:4	PC ae C40:5
+His	Lys
+PC ae C30:2	PC ae C32:2
+PC ae C38:5	PC ae C40:5
+PC ae C40:4	PC ae C42:5
+C12	C7-DC
+PC aa C32:3	PC aa C34:3
+C6 (C4:1-DC)	C16:1
+lysoPC a C20:4	PC aa C38:4
+PC aa C36:1	SM C24:0
+PC ae C40:2	SM C26:1
+alpha-AAA	Val
+PC ae C30:0	PC aa C28:1
+PC ae C34:2	PC ae C36:4
+PC aa C42:1	PC aa C42:2
+PC ae C36:2	PC ae C38:3
+PC aa C36:1	PC aa C34:3
+SM (OH) C16:1	SM (OH) C22:1
+C14:1-OH	C14:1
+PC ae C44:3	PC ae C44:4
+PC ae C34:0	PC aa C32:1
+lysoPC a C16:0	C10:2
+SM (OH) C16:1	SM C18:0
+C18	C16
+SM (OH) C14:1	PC ae C30:2
+PC ae C38:4	PC ae C40:5
+PC aa C42:1	PC ae C40:6
+PC ae C38:6	PC ae C40:6
+PC ae C36:5	PC ae C38:5
+PC ae C36:4	PC ae C38:6
+PC aa C32:1	PC aa C32:0
+C8	C5-DC (C6-OH)
+C6 (C4:1-DC)	C10
+PC ae C36:3	PC ae C36:2
+C4	C3
+lysoPC a C16:1	PC aa C32:1
+PC aa C34:4	PC aa C34:3
+DX	Sarcosine
+PC ae C32:2	PC ae C38:6
+SM (OH) C16:1	SM (OH) C22:2
+PC aa C42:2	PC aa C42:1
+SM (OH) C22:2	SM (OH) C16:1
+PC aa C32:0	PC aa C34:3
+PC aa C28:1	SM C18:0
+C12	C14:1-OH
+PC aa C32:0	PC aa C30:0
+PC ae C34:1	PC ae C36:3
+Lys	Gly
+PC aa C32:1	PC ae C34:0
+PC aa C28:1	SM C16:0
+PC ae C36:2	lysoPC a C17:0
+PC ae C34:1	PC ae C32:1
+PC ae C38:3	PC ae C34:1
+C6 (C4:1-DC)	C10:2
+Pro	Ala
+SM (OH) C14:1	SM C16:0
+PC ae C42:3	PC aa C42:0
+PC ae C32:1	PC ae C34:1
+His	Trp
+PC aa C40:5	PC aa C32:1
+PC ae C32:1	SM C16:0
+SM C18:1	SM (OH) C22:2
+SM C16:0	SM C24:0
+PC aa C36:1	PC ae C34:1
+C14:1-OH	SDMA
+SM C20:2	SM C18:1
+PC ae C42:3	PC ae C40:3
+C16:1	C10:2
+PC aa C36:6	PC aa C38:5
+C7-DC	Kynurenine
+PC ae C42:2	PC ae C32:1
+SM (OH) C22:2	SM (OH) C14:1
+PC ae C30:0	PC ae C34:2
+SM (OH) C22:2	SM C16:0
+C14:1	C16:1
+PC ae C38:6	PC ae C32:2
+PC ae C40:6	PC aa C38:6
+PC aa C32:3	PC ae C32:2
+PC ae C36:1	PC ae C38:3
+PC ae C40:6	PC aa C42:1
+Trp	His
+PC ae C38:0	PC aa C38:5
+PC aa C38:0	PC aa C36:0
+SM (OH) C22:1	SM (OH) C16:1
+PC ae C38:5	PC ae C38:4
+PC ae C40:2	SM (OH) C16:1
+PC ae C36:3	PC ae C42:4
+PC ae C36:4	PC ae C34:2
+PC ae C42:3	PC ae C38:0
+PC ae C44:4	PC ae C42:4
+Asn	Ala
+C8	C6 (C4:1-DC)
+C6 (C4:1-DC)	C8
+PC aa C42:6	PC aa C40:6
+PC ae C34:1	PC ae C30:0
+C10	C5-DC (C6-OH)
+alpha-AAA	Glu
+PC ae C40:5	PC ae C38:4
+PC ae C44:3	PC ae C42:3
+PC ae C40:6	PC ae C40:5
+C14:1	C18:1
+PC ae C36:2	PC ae C34:2
+PC aa C40:3	PC ae C40:3
+PC aa C36:5	PC aa C38:5
+Ala	Ile
+lysoPC a C16:0	lysoPC a C20:3
+PC aa C32:1	PC aa C34:3
+PC aa C32:3	SM (OH) C22:1
+lysoPC a C18:0	C10:2
+Val	C3
+PC aa C40:4	PC aa C32:1
+Asn	Taurine
+PC aa C32:0	PC ae C32:1
+C16:1	C14:1
+PC ae C38:3	PC ae C40:4
+PC ae C36:2	PC ae C36:1
+PC aa C38:0	PC aa C42:1
+PC ae C40:5	PC ae C40:6
+C9	Pro
+lysoPC a C18:2	lysoPC a C18:1
+Cit	Creatinine
+PC aa C42:1	PC ae C42:3
+Ile	Ala
+C14:1-OH	C16
+PC aa C38:0	PC aa C42:0
+PC ae C36:2	PC ae C36:3
+SM C24:0	PC aa C36:1
+PC aa C38:5	PC aa C38:4
+PC aa C42:1	PC ae C38:0
+C7-DC	C12
+C3	Val
+lysoPC a C20:3	PC aa C38:3
+C18:2	Orn
+PC aa C40:3	PC ae C42:2
+PC ae C44:3	PC ae C40:3
+PC ae C36:0	PC aa C32:0
+Ile	alpha-AAA
+lysoPC a C16:1	lysoPC a C16:0
+C4	Creatinine
+SM C18:0	SM C16:0
+PC aa C40:3	PC ae C32:2
+SM C16:1	PC ae C32:2
+SM (OH) C14:1	SM (OH) C22:2
+PC ae C40:1	PC ae C42:1
+SM (OH) C24:1	SM (OH) C16:1
+Lys	Thr
+PC ae C40:2	PC ae C38:6
+Creatinine	C4
+C10	C6 (C4:1-DC)
+PC ae C40:4	PC ae C38:3
+PC aa C42:1	PC aa C40:2
+SM C24:1	SM (OH) C22:2
+PC aa C34:3	PC aa C32:3
+lysoPC a C16:0	C3
+PC ae C42:5	PC ae C42:4
+PC aa C36:1	PC aa C32:1
+C16:1	C5-DC (C6-OH)
+PC aa C40:6	PC aa C42:6
+PC aa C28:1	PC ae C34:1
+PC ae C42:2	PC ae C42:1
+PC aa C40:2	PC aa C42:1
+PC ae C40:5	C14:1
+SM C16:0	PC ae C32:1
+SDMA	Kynurenine
+Asp	Taurine
+PC ae C34:1	PC aa C28:1
+PC ae C42:1	PC ae C40:1
+Asp	Orn
+PC ae C42:2	PC aa C42:5
+PC ae C44:3	PC ae C42:1
+PC ae C38:5	PC ae C36:5
+PC ae C34:1	PC ae C36:0
+PC aa C32:1	PC aa C36:1
+C7-DC	C14:2
+PC aa C32:1	PC aa C38:3
+PC ae C34:0	PC ae C36:0
+Gly	Asn
+PC aa C36:1	PC ae C36:1
+PC ae C44:6	PC ae C32:1
+PC aa C38:3	PC aa C32:1
+PC ae C44:3	PC ae C32:1
+C5-DC (C6-OH)	C10:2
+PC ae C42:1	PC aa C42:6
+PC aa C42:6	PC aa C36:6
+PC ae C34:0	PC aa C30:0
+PC ae C42:5	PC ae C38:5
+PC aa C32:1	PC aa C40:4
+PC aa C42:0	PC ae C32:1
+Sarcosine	DX
+PC ae C34:0	PC aa C32:0
+Glu	alpha-AAA
+PC ae C38:3	PC ae C36:1
+PC ae C36:1	PC ae C36:2
+C18:1	C14:1
+SM C24:1	SM C18:0
+PC ae C32:2	PC aa C32:3
+C4	T4-OH-Pro
+SM C16:0	SM C18:0
+PC ae C40:1	PC ae C38:0
+C12	C8
+Lys	Trp
+Trp	Lys
+PC aa C40:3	PC ae C36:0
+C10	C14:2
+lysoPC a C16:0	lysoPC a C18:1
+PC ae C42:4	SDMA
+C5-DC (C6-OH)	C12
+SDMA	Cit
+C10:2	C5-DC (C6-OH)
+PC ae C38:6	PC ae C40:5
+PC ae C34:0	SM (OH) C16:1
+C7-DC	Creatinine
+PC ae C34:0	PC ae C40:2
+His	Asn
+PC ae C40:5	SDMA
+Kynurenine	SDMA
+His	C0
+PC aa C28:1	PC ae C30:2
+lysoPC a C16:1	PC aa C34:3
+PC ae C34:2	SM (OH) C14:1
+SM C24:1	Arg
+Thr	Gly
+SM C18:1	SM (OH) C16:1
+PC ae C32:2	SM C16:0
+PC aa C38:3	PC aa C40:3
+SM C18:0	PC aa C28:1
+PC ae C34:3	lysoPC a C18:2
+DX	C14:2
+PC aa C40:6	PC ae C40:2
+C18:1	Glu
+PC ae C38:3	PC ae C36:3
+C16	C16:1
+PC ae C38:0	PC aa C42:6
+lysoPC a C20:4	PC aa C38:5
+PC ae C38:5	PC ae C38:6
+PC ae C38:3	C3
+PC ae C36:3	PC ae C34:1
+PC ae C40:3	Arg
+C3	Creatinine
+alpha-AAA	C3
+SM (OH) C14:1	DX
+PC ae C34:0	SM C18:0
+C14:1-OH	Kynurenine
+C3	alpha-AAA
+PC aa C36:1	lysoPC a C18:1
+PC aa C34:4	PC aa C36:6
+Asn	Cit
+SM C16:1	SM C24:0
+PC aa C40:5	PC aa C40:6
+PC ae C42:2	PC aa C42:1
+C8	C12
+PC aa C42:0	PC aa C38:0
+SM C16:1	SM (OH) C22:2
+PC ae C36:0	lysoPC a C16:0
+SM (OH) C24:1	SM C24:0
+Creatinine	C3
+PC ae C32:2	PC ae C36:0
+PC ae C38:6	Sarcosine
+PC aa C40:6	Arg
+PC aa C32:3	PC aa C38:5
+PC ae C38:4	PC ae C40:6
+C10:2	Orn
+PC aa C40:5	PC ae C42:2
+SM (OH) C22:1	SM C18:0
+Ile	Trp
+C12	C5-DC (C6-OH)
+Trp	Ile
+lysoPC a C18:1	lysoPC a C17:0
+PC ae C32:2	PC ae C40:5
+C7-DC	SDMA
+PC ae C36:1	C14:1
+SM C24:1	PC ae C32:1
+PC aa C36:5	PC ae C42:4
+PC aa C32:0	PC aa C36:6
+Lys	Arg
+C14:2	C10
+Asn	His
+PC ae C30:2	PC ae C34:1
+Cit	Asn
+PC aa C38:3	PC aa C34:3
+C5-DC (C6-OH)	PC ae C30:2
+C2	C14:1
+PC ae C42:1	Sarcosine
+C9	Asp
+PC ae C42:1	PC ae C44:3
+SM C18:1	C6 (C4:1-DC)
+PC ae C40:1	PC ae C32:2
+C6 (C4:1-DC)	C5-DC (C6-OH)
+PC ae C30:0	PC ae C38:3
+PC ae C42:2	PC ae C32:2
+C6 (C4:1-DC)	alpha-AAA
+PC aa C40:5	C14:1
+PC aa C42:2	PC ae C32:2
+SM (OH) C22:2	PC ae C32:2
+His	Arg
+PC aa C38:6	PC aa C40:5
+Lys	Ile
+lysoPC a C17:0	C3
+C3	T4-OH-Pro
+Val	Trp
+PC aa C42:0	PC aa C40:2
+C14:1	C5-DC (C6-OH)
+SM (OH) C14:1	PC ae C36:0
+SM C26:0	PC ae C36:0
+PC ae C34:2	lysoPC a C18:2
+C14:1	C16
+PC ae C38:6	PC ae C36:0
+PC ae C32:2	PC aa C42:1
+PC ae C42:4	PC ae C40:3
+PC aa C32:0	PC ae C38:0
+PC ae C42:3	Glu
+SM C16:1	alpha-AAA
+PC aa C32:0	PC ae C42:3
+SM (OH) C14:1	PC ae C40:5
+Pro	Cit
+SM C24:0	Gly
+PC ae C32:2	SM (OH) C22:2
+SM C18:1	PC ae C32:2
+PC ae C40:4	DX
+PC ae C40:3	lysoPC a C17:0
+C5-DC (C6-OH)	DX
+Val	DX
+SM C26:1	SM C24:0
+SM (OH) C22:2	lysoPC a C18:2
+SDMA	DX
+alpha-AAA	DX
+C14:2	DX
+SM C16:0	Arg
+C12	DX
+SM C16:1	Cit
+PC ae C36:0	PC aa C42:1
+PC aa C42:1	T4-OH-Pro
+lysoPC a C20:4	Asn
+C8	DX
+PC ae C36:2	PC ae C40:3
+C9	Sarcosine
+C18:2	Glu
+His	Thr
+lysoPC a C18:1	Cit
+PC ae C32:1	PC ae C40:3
+Ala	Glu
+PC ae C42:2	PC ae C36:0
+PC ae C38:0	PC ae C32:2
+PC ae C34:3	Cit
+lysoPC a C18:2	Gly
+PC ae C38:5	DX
+PC ae C34:2	PC ae C40:3
+C14:1-OH	DX
+PC aa C38:5	PC aa C32:1
+C5-DC (C6-OH)	PC ae C40:3
+C9	PC aa C36:5
+PC ae C44:5	PC ae C32:1
