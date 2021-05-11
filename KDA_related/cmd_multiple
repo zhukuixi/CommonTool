@@ -1,0 +1,11 @@
+#!/bin/bash
+#PBS -q high_pri
+#PBS -J 1-36
+#PBS -W group_list=ruichang
+#PBS -N DEgm_all2
+#PBS -l walltime=60:0:0
+#PBS -l select=1:ncpus=2:mem=6gb
+ulimit -c 0
+cd /xdisk/ruichang/mig2020/rsgrps/ruichang/kuixizhu/sc/orga/work/zhuk01/KDA/KDA_template/code
+module load R
+Rscript KDA_Amanda_new.R /rsgrps/ruichang/kuixizhu/sc/orga/work/zhuk01/KDA/KDA_singlecellMagic/networkList/posterior_new_all_v2.txt /rsgrps/ruichang/kuixizhu/sc/orga/work/zhuk01/KDA/KDA_singlecellMagic/targetList/DE_Gene_GeneModule/DE_Gene_GeneModule_all/ /rsgrps/ruichang/kuixizhu/sc/orga/work/zhuk01/KDA/KDA_singlecellMagic/output/DE_Gene_GeneModule_posterior_new_all_v2/ ${PBS_ARRAY_INDEX} AD

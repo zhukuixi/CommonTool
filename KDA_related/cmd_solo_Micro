@@ -1,0 +1,10 @@
+#!/bin/bash
+#PBS -q high_pri
+#PBS -W group_list=ruichang
+#PBS -N Micro_KDA
+#PBS -l walltime=60:0:0
+#PBS -l select=1:ncpus=2:mem=6gb
+ulimit -c 0
+cd /xdisk/ruichang/mig2020/rsgrps/ruichang/kuixizhu/sc/orga/work/zhuk01/KDA/KDA_template/code
+module load R
+Rscript KDA_solo_new.R /xdisk/ruichang/mig2020/rsgrps/ruichang/kuixizhu/sc/orga/work/zhuk01/KDA/KDA_scRNA_microAstro/networkList/posterior_Micro_5k_0.6.txt /xdisk/ruichang/mig2020/rsgrps/ruichang/kuixizhu/sc/orga/work/zhuk01/KDA/KDA_scRNA_microAstro/targetList/pureDE/micro.txt /xdisk/ruichang/mig2020/rsgrps/ruichang/kuixizhu/sc/orga/work/zhuk01/KDA/KDA_scRNA_microAstro/output/pureDE/posterior_Micro_5k_0.6/
