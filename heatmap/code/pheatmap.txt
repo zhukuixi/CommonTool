@@ -1,0 +1,40 @@
+
+
+
+
+ 
+  makeColorRampPalette_advance<- function(colors, cutoff.fraction1, cutoff.fraction2,num.colors.in.palette)
+  {
+    ramp1 <- colorRampPalette(colors[1:2])(num.colors.in.palette * cutoff.fraction1)
+    ramp2 <- colorRampPalette(colors[3:4])(num.colors.in.palette * (cutoff.fraction2))
+    ramp3 <- colorRampPalette(colors[4:5])(num.colors.in.palette * (1 - cutoff.fraction1-cutoff.fraction2))
+    return(c(ramp1, ramp2,ramp3))
+  }
+ 
+ 
+ cols <- makeColorRampPalette_advance(c("white", "white",    # distances 0 to 3 colored from white to red
+                                "green", "yellow","red"), # distances 3 to max(distmat) colored from green to black
+                              (-log(0.05))/(-log(cutoff)),(-log(0.01))/(-log(cutoff)),
+                              1000)
+                              
+                              
+     # only by doing this, it can do cluster.
+
+	
+	negativeLogModuleMatrix = negativeLogModuleMatrix+rnorm(nrow(negativeLogModuleMatrix)*nrow(negativeLogModuleMatrix),0,0.000001)
+	final_heatmap=pheatmap(negativeLogModuleMatrix,
+		clustering_distance_cols = "correlation",treeheight_col=0,treeheight_row=10,
+		clustering_distance_rows = "correlation",labels_col= moduleName,labels_row= moduleName,
+		cluster_rows=T, cluster_cols=T,annotation_names_row=F,
+		 color = cols
+		)
+
+	
+
+	save_pheatmap_png <- function(x, filename, width=12, height=10, res = 600) {
+	  png(filename, width = width, height = height, res = res,units="in")
+	  grid::grid.newpage()
+	  grid::grid.draw(x$gtable)
+	  dev.off()}
+	 
+	save_pheatmap_png(final_heatmap, "F:/MountSinai_DataBackup/mssn/Micro_Neuron_MAYO/microglialPaper_Figure/output/Figure3C.png")

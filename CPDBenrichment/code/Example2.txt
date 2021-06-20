@@ -1,0 +1,98 @@
+PathwayEnrichment <-function(interest,mapping,pathway,needMapping){
+	options(stringsAsFactors = FALSE)
+	## input : one column vector
+	
+	## mapping : two column file
+	## The first column got the same ID type as input
+	## The second column got the ID type in the pathway
+
+	## pathway: 2 columns file
+	## 1st column:pathwayName
+	## 2nd column:pathwayMembers separated by comma
+	## Example:
+	## PathwayA A,B,C,D,E,F
+	
+	## needMapping:Boolean variable indicating whether should perform ID convertion(mapping)
+	
+	## Get the background
+	bg_all=unique(unlist(strsplit(pathway[,2],",")))	
+		
+	if (needMapping){
+		symbol = mapping[match(interest,mapping[,1]),2]
+		symbol = symbol[!is.na(symbol)]
+		interest = symbol
+	}
+	interest = unique(interest)
+	interest = intersect(interest,bg_all)
+	
+	
+	## Pathway Enrichment
+	ans=c()
+	for(j in 1:nrow(pathway)){
+		path_name=pathway[j,1]
+		path_member=strsplit(pathway[j,2],",")[[1]]
+		path_bg=bg_all
+		aa=length(intersect(interest,path_member))
+		bb=sum(!path_member%in%interest)
+		cc=sum(!interest%in%path_member)
+		dd=sum(!path_bg%in%union(path_member,interest))
+		model=fisher.test(matrix(c(aa,bb,cc,dd),2,2),alternative="greater")
+		pvalue_bg=model$p.value		
+
+		ans=rbind(ans,c(pathway[j,1],pvalue_bg))
+	}
+	fdr=p.adjust(as.numeric(ans[,2]),"fdr")
+	ans=cbind(ans,fdr)
+	colnames(ans)=c("pathway","pvalue","fdr")
+	ans = ans[order(as.numeric(ans[,2])),]
+	return(ans)
+}
+
+
+# Basic function to convert mouse to human gene names
+convertMouseGeneList <- function(x){
+	genesV2 = getLDS(attributes = c("mgi_symbol"), filters = "mgi_symbol", values = x , mart = mouse, attributesL = c("hgnc_symbol"), martL = human, uniqueRows=T)
+	humanx <- genesV2[, 2]
+	# Print the first 6 genes found to the screen
+	print(head(humanx))
+	return(humanx)
+}
+
+library("biomaRt")
+human = useMart("ensembl", dataset = "hsapiens_gene_ensembl")
+mouse = useMart("ensembl", dataset = "mmusculus_gene_ensembl")
+	
+	
+options(stringsAsFactors=F)
+pathway = read.table("D:/JooGitRepo/CommonTool/CPDBenrichment/supportFile/CPDB_pathways_symbol.tab",sep="\t",header=T)
+pathway[,1]=paste(pathway[,1],pathway[,3],sep="_")
+pathway[,2]=pathway[,4]
+pathway = pathway[,c(1,2)]
+
+inFolder = "D:/work/StJude/data_for_Rui/"
+outFolder = "D:/work/StJude/PathwayEnrichmentOutput/"
+folders = list.files(inFolder)
+
+getName<-function(gene){
+	ans=strsplit(strsplit(as.character(gene),"\\|")[[1]][3],"_")[[1]][1]
+	return(ans)
+}
+
+for(i in 1:length(folders)){
+	dir.create(paste(outFolder,folders[i],sep=""),showWarnings=F)
+	files = list.files(paste(inFolder,folders[i],sep=""))
+	files = files[grepl("txt$",files)]
+
+	for(j in 1:length(files)){
+		tmp = read.table(paste(inFolder,folders[i],"/",files[j],sep=""),sep="\t",header=T)
+		gene = tmp[tmp$P.Value<0.05,1]
+		geneName = unlist(lapply(gene,getName))
+		geneName = convertMouseGeneList(geneName)
+		#re=PathwayEnrichment(unique(geneName),NULL,pathway,FALSE)
+		write.table(geneName,paste(outFolder,folders[i],"/hgncGeneName_",files[j],sep=""),sep="\t",row.names=F,quote=F)
+		#write.table(re,paste(outFolder,folders[i],"/",files[j],sep=""),sep="\t",row.names=F,quote=F)
+	}
+}
+
+
+
