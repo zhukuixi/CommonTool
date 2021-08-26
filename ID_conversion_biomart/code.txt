@@ -2,7 +2,7 @@
 library("biomaRt")
 human = useMart("ensembl", dataset = "hsapiens_gene_ensembl")
 mouse = useMart("ensembl", dataset = "mmusculus_gene_ensembl")
-	
+
 #listAttributes(human)
 
 
@@ -17,7 +17,7 @@ convertID <- function(x){
   #hgnc_symbol
   ## if a identity cannot be mapped, the original ID would appear in result
   
-  mappedResult = getLDS(attributes = c("hgnc_symbol"), filters = "hgnc_symbol", values = x , mart = human, attributesL = c("mgi_symbol"), martL = mouse, uniqueRows=F)
+  mappedResult = getLDS(attributes = c("ensembl_gene_id"), filters = "ensembl_gene_id", values = x , mart = human, attributesL = c("hgnc_symbol"), martL = human, uniqueRows=F)
   ind = match(x,mappedResult[,1])
   result = mappedResult[ind,2]
   result = cbind(x,result)
@@ -27,4 +27,62 @@ convertID <- function(x){
   return(result)
 }
 
- 
+convertIDforNet<-function(net){
+	ans=cbind(convertIDforNetColumn(net[,1]),convertIDforNetColumn(net[,2]))
+	return(ans)
+}
+
+convertIDforNetColumn <- function(x){
+  ## Frequently used attributes for ID conversion,
+  ## You can just listAttributes(name of a biomart Object) to check more attributes
+  #ensembl_gene_id
+  #entrezgene_id
+  #uniprot_gn_id
+  #hgnc_symbol
+  ## if a identity cannot be mapped, the original ID would appear in result
+  
+  mappedResult = getLDS(attributes = c("ensembl_gene_id"), filters = "ensembl_gene_id", values = x , mart = human, attributesL = c("hgnc_symbol"), martL = human, uniqueRows=F)
+  ind = match(x,mappedResult[,1])
+  result = mappedResult[ind,2]
+  result[which(result=="")] = x[which(result=="")]
+  result[is.na(result)] = x[is.na(result)]
+  return(result)
+}
+
+convertIDmouse2human <- function(x){
+  ## Frequently used attributes for ID conversion,
+  ## You can just listAttributes(name of a biomart Object) to check more attributes
+  #ensembl_gene_id
+  #entrezgene_id
+  #uniprot_gn_id
+  #hgnc_symbol
+  ## if a identity cannot be mapped, the original ID would appear in result
+  
+  mappedResult = getLDS(attributes = c("mgi_symbol"), filters = "mgi_symbol", values = x , mart = mouse, attributesL = c("hgnc_symbol"), martL = human, uniqueRows=F)
+  ind = match(x,mappedResult[,1])
+  result = mappedResult[ind,2]
+  result = cbind(x,result)
+  #result[which(result=="")] = x[which(result=="")]
+  #result[is.na(result)] = x[is.na(result)]
+  
+  return(result)
+}
+
+
+
+convertID_symbol2ENSG <- function(x){
+  ## Frequently used attributes for ID conversion,
+  ## You can just listAttributes(name of a biomart Object) to check more attributes
+  #ensembl_gene_id
+  #entrezgene_id
+  #uniprot_gn_id
+  #hgnc_symbol
+  ## if a identity cannot be mapped, the original ID would appear in result
+  
+  mappedResult = getLDS(attributes = c("hgnc_symbol"), filters = "hgnc_symbol", values = x , mart = human, attributesL = c("ensembl_gene_id"), martL = human, uniqueRows=F)
+  ind = match(x,mappedResult[,1])
+  result = mappedResult[ind,2]
+  result[which(result=="")] = x[which(result=="")]
+  result[is.na(result)] = x[is.na(result)]  
+  return(result)
+}

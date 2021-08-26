@@ -1,0 +1,60 @@
+options(stringsAsFactors=F)
+target9_detail = read.table("F:/MountSinai_DataBackup/mssn/Micro_Neuron_MAYO/MP/9target_detail.txt",sep="\t")
+
+setwd("F:/MountSinai_DataBackup/mssn/Micro_Neuron_MAYO/MP/downstreamEdge_output/symbol")
+files = list.files()
+mayo_files = files[grepl("MAYO",files)]
+rosmap_files = files[grepl("ROSMAP",files)]
+
+library(randomcoloR)
+n <- 9
+palette <- distinctColorPalette(n)
+outFolder = "F:/MountSinai_DataBackup/mssn/Micro_Neuron_MAYO/MP/downstreamEdge_output/forDraw/"
+
+forDraw = paste("piechart: attributelist=\"encoder\" labellist=\"",paste(target9 ,collapse=","),"\" colorlist=\"",paste(palette,collapse=","),"\"",sep="")
+
+
+fun<-function(input_files,flag){
+
+	## combine networks
+	store_netCombo = c()
+	node_target = c()
+	for(i in 1:length(input_files)){
+		target = strsplit(input_files[i],"_")[[1]][1]
+		target_symbol = target9_detail[match(target,target9_detail[,2]),1]
+		network = read.table(mayo_files[i],sep="\t",header=T)
+		store_netCombo = rbind(store_netCombo,network)
+		network_node = unique(c(network[,1],network[,2]))
+		node_target = rbind(node_target,cbind(network_node,target_symbol))
+	}
+	store_netCombo = unique(store_netCombo)
+	colnames(store_netCombo)=c("from","to")
+	write.table(store_netCombo,paste(outFolder,"netCombo_",flag,".txt",sep=""),sep="\t",row.names=F,quote=F)
+
+	## for cytoscape barchart
+	store_cyto = c()
+	uniqueNode = unique(node_target[,1])
+	target9 = target9_detail[1:9,1]
+	for(i in 1:length(uniqueNode)){
+		curNode = uniqueNode[i]
+		encoder = rep(0,9)
+		targets = node_target[which(node_target[,1]==curNode),2]
+		encoder[match(targets,target9)]=1
+		encoder = paste(encoder,collapse=",")
+		store_cyto = rbind(store_cyto,c(curNode,encoder ,forDraw))
+	}
+	colnames(store_cyto) = c("gene","encoder","draw")
+	write.table(store_cyto,paste(outFolder,"cyto_",flag,".txt",sep=""),sep="\t",row.names=F,quote=F)
+}
+
+fun(mayo_files,"mayo")
+fun(rosmap_files,"rosmap")
+
+## get legend
+png(paste(outFolder ,"legend_target.png",sep=""),width=7,height=7,units="in",res=600)
+plot(1)
+legend("bottom",target9 ,fill=palette,pt.cex=1.2)
+dev.off()
+
+
+

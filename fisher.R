@@ -1,0 +1,10 @@
+fisher<-function(a,b,bg){
+	a=intersect(a,bg)
+	b=intersect(b,bg)
+	aa=length(intersect(a,b))
+	bb=sum(!b%in%a)
+	cc=sum(!a%in%b)
+	dd=sum(!bg%in%union(b,a))
+	model=fisher.test(matrix(c(aa,bb,cc,dd),2,2),alternative="greater")
+	return(model$p.value)	
+}
