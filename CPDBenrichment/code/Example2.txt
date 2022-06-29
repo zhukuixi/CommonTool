@@ -1,4 +1,4 @@
-PathwayEnrichment <-function(interest,mapping,pathway,needMapping){
+PathwayEnrichment <-function(interest,bg_input,mapping,pathway,needMapping){
 	options(stringsAsFactors = FALSE)
 	## input : one column vector
 	
@@ -15,7 +15,9 @@ PathwayEnrichment <-function(interest,mapping,pathway,needMapping){
 	## needMapping:Boolean variable indicating whether should perform ID convertion(mapping)
 	
 	## Get the background
-	bg_all=unique(unlist(strsplit(pathway[,2],",")))	
+	bg_all = c()
+	if(bg_input==FALSE){bg_all=unique(unlist(strsplit(pathway[,2],",")))}
+	else{bg_all=bg_input}
 		
 	if (needMapping){
 		symbol = mapping[match(interest,mapping[,1]),2]
@@ -31,11 +33,11 @@ PathwayEnrichment <-function(interest,mapping,pathway,needMapping){
 	for(j in 1:nrow(pathway)){
 		path_name=pathway[j,1]
 		path_member=strsplit(pathway[j,2],",")[[1]]
-		path_bg=bg_all
+		path_member = intersect(path_member,bg_all)
 		aa=length(intersect(interest,path_member))
 		bb=sum(!path_member%in%interest)
 		cc=sum(!interest%in%path_member)
-		dd=sum(!path_bg%in%union(path_member,interest))
+		dd=sum(!bg_all%in%union(path_member,interest))
 		model=fisher.test(matrix(c(aa,bb,cc,dd),2,2),alternative="greater")
 		pvalue_bg=model$p.value		
 
@@ -47,6 +49,11 @@ PathwayEnrichment <-function(interest,mapping,pathway,needMapping){
 	ans = ans[order(as.numeric(ans[,2])),]
 	return(ans)
 }
+
+
+
+
+
 
 
 # Basic function to convert mouse to human gene names
@@ -88,7 +95,7 @@ for(i in 1:length(folders)){
 		gene = tmp[tmp$P.Value<0.05,1]
 		geneName = unlist(lapply(gene,getName))
 		geneName = convertMouseGeneList(geneName)
-		#re=PathwayEnrichment(unique(geneName),NULL,pathway,FALSE)
+		#re=PathwayEnrichment(unique(geneName),FALSE,NULL,pathway,FALSE)
 		write.table(geneName,paste(outFolder,folders[i],"/hgncGeneName_",files[j],sep=""),sep="\t",row.names=F,quote=F)
 		#write.table(re,paste(outFolder,folders[i],"/",files[j],sep=""),sep="\t",row.names=F,quote=F)
 	}

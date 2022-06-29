@@ -1,8 +1,9 @@
-PathwayEnrichment <-function(interest,mapping,pathway,needMapping){
+PathwayEnrichment <-function(interest,bg_input,mapping,pathway,needMapping){
 	options(stringsAsFactors = FALSE)
-	## input : one column vector
+	## interest: one column vector
+	## bg_input: one column vector or NULL
 	
-	## mapping : two column file
+	## mapping : two column file or NULL
 	## The first column got the same ID type as input
 	## The second column got the ID type in the pathway
 
@@ -15,7 +16,9 @@ PathwayEnrichment <-function(interest,mapping,pathway,needMapping){
 	## needMapping:Boolean variable indicating whether should perform ID convertion(mapping)
 	
 	## Get the background
-	bg_all=unique(unlist(strsplit(pathway[,2],",")))	
+	bg_all = c()
+	if(is.null(bg_input)){bg_all=unique(unlist(strsplit(pathway[,2],",")))}
+	else{bg_all=bg_input}
 		
 	if (needMapping){
 		symbol = mapping[match(interest,mapping[,1]),2]
@@ -31,11 +34,11 @@ PathwayEnrichment <-function(interest,mapping,pathway,needMapping){
 	for(j in 1:nrow(pathway)){
 		path_name=pathway[j,1]
 		path_member=strsplit(pathway[j,2],",")[[1]]
-		path_bg=bg_all
+		path_member = intersect(path_member,bg_all)
 		aa=length(intersect(interest,path_member))
 		bb=sum(!path_member%in%interest)
 		cc=sum(!interest%in%path_member)
-		dd=sum(!path_bg%in%union(path_member,interest))
+		dd=sum(!bg_all%in%union(path_member,interest))
 		model=fisher.test(matrix(c(aa,bb,cc,dd),2,2),alternative="greater")
 		pvalue_bg=model$p.value		
 

@@ -3,6 +3,14 @@ options(java.parameters = "-Xmx8000m")
 
 library("openxlsx")
 
+############################################################################################################
+wb <- loadWorkbook("Supplementary_TableS8.xlsx")
+sheets <- names(wb)
+for(i in 1:length(sheets)){
+	enrich = read.xlsx("Supplementary_TableS8.xlsx",sheet = curTarget)
+}
+############################################################################################################
+
 setwd("D:/Dropbox/TIME/2021/0328/Figure7_05182021/CPDBtermOverlap/INPUT")
 options(stringsAsFactors = F)
 network = read.table("combo_pairWiseSP_VGF_REST.txt",sep="\t")
@@ -34,4 +42,6 @@ for(i in 1:length(sheets)){
 }
 
 write.xlsx(result, file = "writeXLSX2.xlsx")
+
+
 
