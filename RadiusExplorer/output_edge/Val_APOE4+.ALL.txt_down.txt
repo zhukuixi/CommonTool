@@ -1,0 +1,17 @@
+from	to
+Val	Tyr
+C3	Val
+Val	C3
+alpha-AAA	Val
+Val	alpha-AAA
+Lys	Val
+Val	Lys
+Ile	Val
+Val	Ile
+Trp	Val
+Val	Trp
+Tyr	Ala
+Lys	Tyr
+Tyr	Lys
+Trp	Tyr
+Tyr	Trp

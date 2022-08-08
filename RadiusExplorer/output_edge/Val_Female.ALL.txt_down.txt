@@ -1,0 +1,6 @@
+from	to
+Tyr	Val
+Val	Glu
+Asn	Tyr
+His	Tyr
+Tyr	Orn

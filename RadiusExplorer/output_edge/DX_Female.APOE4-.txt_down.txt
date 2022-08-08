@@ -1,0 +1,7 @@
+from	to
+C4	DX
+DX	C4
+PC ae C40:4	DX
+DX	PC ae C40:4
+DX	SM C16:1
+PC ae C40:4	PC ae C40:6

@@ -1,0 +1,6 @@
+from	to
+alpha-AAA	Sarcosine
+alpha-AAA	Lys
+Ala	Ile
+Ile	Ala
+Trp	Ile

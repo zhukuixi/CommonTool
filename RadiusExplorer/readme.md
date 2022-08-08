@@ -13,11 +13,14 @@ The mode could be up, down and radius. We assume the networks are directed netwo
 ## Parameter listed in order
 		String netFolder= args[0];      #The first one is a directory to the network.  (This folder contains all the network you want to check) 
 		String targetFile = args[1];    #The second one is the path of the target file. (This is a simple txt file with single column)
-		String modeFile = args[2];      #The third is the path of the mode file. (This is a simple txt file contains single column. In this column, you could put up/down/radius in it to achieve different running mode)
-		String levelout = args[3];      #This is an output directoy
+		String outFolder = args[2];
+		mode= args[3];  //up, down, radius
+		int maxStep = Integer.parseInt(args[4]);  //if -1, it outputs all level
+		String outputMode = args[5]; //edge OR node
 
 
-## To Run
-	 java -jar radiusExplorer.jar ./input/network/ ./input/target.txt ./input/mode.txt ./input/level/ 
+## To Run	 
+	 java -jar RadiusExplorer_FINAL.jar ./input/network/ ./input/target.txt ./output_edge/ down 2
+     edge
 
 
