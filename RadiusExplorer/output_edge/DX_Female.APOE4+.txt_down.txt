@@ -1,5 +1,0 @@
-from	to
-DX	C14:2
-DX	Trp
-C18:2	C14:2
-C14:2	Thr

@@ -1,3 +1,0 @@
-from	to
-DX	PC aa C30:0
-PC aa C30:0	C14:1

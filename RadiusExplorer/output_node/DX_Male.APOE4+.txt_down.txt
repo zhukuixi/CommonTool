@@ -1,6 +1,0 @@
-0	DX
-1	PC aa C30:0
-2	C14:1
-2	PC aa C34:4
-2	PC aa C32:1
-2	PC aa C32:0

@@ -1,6 +1,0 @@
-from	to
-Taurine	DX
-DX	Taurine
-Asp	Taurine
-Taurine	Asp
-Taurine	Orn

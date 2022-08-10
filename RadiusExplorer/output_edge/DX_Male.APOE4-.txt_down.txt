@@ -1,5 +1,0 @@
-from	to
-C14:2	DX
-Sarcosine	DX
-DX	Sarcosine
-C10	C14:2

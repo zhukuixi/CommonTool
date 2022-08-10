@@ -1,8 +1,0 @@
-from	to
-Val	DX
-Orn	Val
-Val	Orn
-Ala	Tyr
-Tyr	Asn
-Tyr	His
-Tyr	Thr
