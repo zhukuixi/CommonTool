@@ -79,9 +79,9 @@ public class FinalradiusExplorer_storeEdges_MassNetMassTarget_FORMAT_FORJAR {
 				allLevelStore.clear();				
 				String outputFile=outFolder+sourceNode+"_"+net+"_"+mode+".txt";	
 				BFS_explore(sourceNode);
-				if(outputMode=="edge") {
+				if(outputMode.equals("edge")) {
 					outputLevelEdge_StepLimit(outputFile,maxStep);
-				}else {
+				}else  {
 					outputLevelNode_StepLimit(outputFile,maxStep);
 				}
 			}
