@@ -1,5 +1,5 @@
 
-dir="D:/Dropbox//TIME/0730/shRNA/output_shRNAdeEnrichment/forDrawBarplot/"
+dir="D:/Dropbox//TIME/0730/shRNA/output_shRNAdeEnrichment/forDrawBarplot/RBM4"
 setwd(dir)
 
 sort_file=list.files()
@@ -52,7 +52,7 @@ for(i in 1:length(sort_file)){
 	dat2$variable = factor(newName,levels=unique(newName))
 
 	cols<- c("ATP1B1"="magenta","DCAF12"="magenta3", "FIBP"="green", "JMJD6"="green3",
-		"NDRG4"="pink","NSF"="yellow","NUDT2"="blue","RAB9A"="red","STXBP1"="cyan",
+		"NDRG4"="pink","NSF"="yellow","NUDT2"="blue","RBM4"="red","STXBP1"="cyan",
 		"YWHAZ"="brown")
 	
 	 ggplot(dat2, aes(x=variable, y=value, fill=network)) + scale_y_continuous(limits = c(0, 10))+
@@ -72,7 +72,7 @@ for(i in 1:length(sort_file)){
 	if(i==1){
 		ggsave(filename=paste("D:/FDR.png",sep=""),width=15,height=10)
 	}else{
-		ggsave(filename=paste("D:/pvalue.png",sep=""),width=15,height=10)
+		ggsave(filename=paste("D:/1015_pvalue.png",sep=""),width=15,height=10)
 
 	}
 }
