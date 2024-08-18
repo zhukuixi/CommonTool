@@ -45,7 +45,7 @@ streamFlowMode="up" or "down";
 
 
 ## To Run
-	java -jar ImproveBackwardForward_pathwayFinder_2ColumnStyle.jar 3 network.txt target.txt output.txt directed closed down
+	java -jar ImproveBackwardForward_pathwayFinder_2ColumnStyle.jar 3 network.txt target.txt output.txt directed open up
 
 		
 		
